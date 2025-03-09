@@ -3,11 +3,11 @@ import 'package:actividad3_flutter/routing/routes.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const LoginPage());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class LoginPage extends StatelessWidget {
+  const LoginPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -155,7 +155,7 @@ class MyCustomFormState extends State<MyCustomForm> {
                       _formKey.currentState!.save();
                       if (username == 'user' && password == 'pass12345') {
                         //pushReplacementNamed para que el usuario no pueda volver atrás después de hacer el login
-                        Navigator.pushReplacementNamed(context, Routes.home,
+                        Navigator.pushReplacementNamed(context, Routes.shopping,
                             arguments: username);
                       } else {
                         //En el caso que el usuario ponga mal als credenciales saltará un mensaje

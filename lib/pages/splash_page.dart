@@ -13,7 +13,7 @@ class _SplashPageState extends State<SplashPage> {
   void initState() {
     super.initState();
     //Después de 5 segundos pasará al login
-    Future.delayed(const Duration(seconds: 5),() {
+    Future.delayed(const Duration(seconds: 5), () {
       Navigator.pushReplacementNamed(context, Routes.login);
     });
   }
@@ -39,8 +39,7 @@ class _SplashPageState extends State<SplashPage> {
             child: Stack(
               children: <Widget>[
                 Center(
-                  child: SizedBox(
-                    width: 30,
+                  child: SizedBox( 
                     height: 30,
                     child: CircularProgressIndicator(),
                   ),

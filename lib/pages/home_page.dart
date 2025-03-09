@@ -1,5 +1,5 @@
 import 'package:actividad3_flutter/global.dart';
-import 'package:actividad3_flutter/pages/hero_page.dart';
+import 'package:actividad3_flutter/pages/cityHero_page.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -53,7 +53,7 @@ class _HomePageState extends State<HomePage> {
       child: Padding(
         padding: const EdgeInsets.all(12),
         child: Column(
-          children: [
+          children: <Widget>[
             //Es un widget que detecta las interacciones del usuario y que responde
             //sin necesidad de un botón.
             GestureDetector(
